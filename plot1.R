@@ -4,5 +4,6 @@ Febdatetime <- paste(hpdata$Date, hpdata$Time)
 Ftime<- strptime(Febdatetime, format = "%d/%m/%Y %H:%M:%S")
 
 png(file = "plot1.png", bg = "transparent")
-hist(hpdata$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)",, )
+hist(hpdata$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
+
 dev.off()
